@@ -1,0 +1,6 @@
+# Use case: avoid hard coding subnet IDs for resources
+
+Parameters:
+  SubnetId: 
+  Type: AWS::EC2::Subnet::Id
+  Description: "Select a subnet for EC2 instance"

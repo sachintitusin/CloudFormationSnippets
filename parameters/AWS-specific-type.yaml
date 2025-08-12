@@ -1,0 +1,5 @@
+# Use case: picking an existing key pair from AWS console drop-down
+Parameters:
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: "Existing EC2 KeyPair for SSH Access"

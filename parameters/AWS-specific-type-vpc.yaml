@@ -1,0 +1,6 @@
+# Use case: Select an existing template without hardcoding it to yaml
+
+Parameters:
+  VPCId:
+    Type: AWS::EC2::VPC::Id
+    Description: "Select an existing VPC"
