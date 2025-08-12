@@ -1,0 +1,5 @@
+Parameters:
+  AvailabilityZones:
+    Type: CommaDelimitedList
+    Default: ap-south-1, us-east-1a
+    Description: "Comma-seperated list of AZs"

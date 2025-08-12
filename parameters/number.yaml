@@ -1,0 +1,9 @@
+Parameters:
+  InstanceCount:
+    Type: Number
+    Default: 2
+    MinValue: 1
+    MaxValue: 5
+    Description: "Number of EC2 instances to launch"
+
+# Use case: To control the size of ASG with similar counts

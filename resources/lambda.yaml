@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Simple Lambda function named imageResizeFn
+
+Resources:
+  ImageResizeFn:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: imageResizeFn
+      Handler: index.handler
+      Role: arn:aws:iam::123456789012:role/lambda-basic-execution-role # Replace with a real IAM role ARN
+      Code:
+        S3Bucket: my-lambda-code-bucket     # Bucket where your ZIP is stored
+        S3Key: image-resize-code.zip        # ZIP file name
+      Runtime: nodejs16.x
