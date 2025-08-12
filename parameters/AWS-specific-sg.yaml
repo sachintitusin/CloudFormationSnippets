@@ -1,0 +1,6 @@
+# Use case: easily select one or more SGs from the console
+
+Parameters:
+  SecurityGroupIds:
+    Type: List<AWS::EC2::SecurityGroup::Id>
+    Description: "Select one or more security groups"

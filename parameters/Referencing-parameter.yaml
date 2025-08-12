@@ -1,0 +1,16 @@
+Parameters:
+  InstanceType:
+    Type: String
+    Default: db.t3.micro
+    AllowedValues:
+      - db.t3.micro
+      - db.t3.small
+      - db.t3.medium
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType:
+        Ref: InstanceType
+      ImageId: ami-0c55b159cbfafe1f0 # Amazon Linux 2
